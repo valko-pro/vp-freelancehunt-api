@@ -1,4 +1,6 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) exit; 
+
 global $admin_page_hooks;
 
 if( !isset($admin_page_hooks['vp-dashboard.php']) ){

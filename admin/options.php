@@ -1,4 +1,6 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) exit; 
+
 add_action('admin_menu', 'vppfa_add_submenu_page');
 function vppfa_add_submenu_page() {
 add_submenu_page(

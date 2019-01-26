@@ -14,10 +14,7 @@
  * Domain Path:       /languages
  */
 
-// If this file is called directly, abort.
-if ( ! defined( 'WPINC' ) ) {
-  die;
-};
+if ( ! defined( 'ABSPATH' ) ) exit; 
 
 add_action( 'plugins_loaded', 'vppfa_load_plugin_textdomain' );
 
