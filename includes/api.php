@@ -14,11 +14,11 @@ $url =  add_query_arg( $params, $url );
 // Signature
 $method = "GET";
 
-function sign($api_secret, $url, $method, $post_params = '') {
+function vppfa_sign($api_secret, $url, $method, $post_params = '') {
     return base64_encode(hash_hmac("sha256", $url.$method.$post_params, $api_secret, true));
 };
 
-$signature = sign($api_secret, $url, $method); 
+$signature = vppfa_sign($api_secret, $url, $method);
 
 // wp_remote_get
 $get_options = array(
